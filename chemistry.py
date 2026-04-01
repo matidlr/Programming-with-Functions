@@ -38,7 +38,18 @@ def make_periodic_table():
         "Ba": ["Barium", 137.327],
         "Au": ["Gold", 196.966569],
         "Hg": ["Mercury", 200.59],
-        "Pb": ["Lead", 207.2]
+        "Pb": ["Lead", 207.2],
+        "Ac": ["Actinium", 227],
+        "Br": ["Bromine", 79.904],
+        "Cr": ["Chromium", 51.9961],
+        "Co": ["Cobalt", 58.933195],
+        "Mn": ["Manganese", 54.938045],
+        "Ni": ["Nickel", 58.6934],
+        "Pt": ["Platinum", 195.084],
+        "Sn": ["Tin", 118.71],
+        "Ti": ["Titanium", 47.867],
+        "V": ["Vanadium", 50.9415],
+        "W": ["Tungsten", 183.84]
     }
 
 
@@ -62,7 +73,8 @@ def main():
 
         periodic_table = make_periodic_table()
 
-        symbol_quantity_list = parse_formula(formula)
+        
+        symbol_quantity_list = parse_formula(formula, periodic_table)
 
         molar_mass = compute_molar_mass(symbol_quantity_list, periodic_table)
 
