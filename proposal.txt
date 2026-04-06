@@ -1,0 +1,113 @@
+Project Proposal
+
+1. What will your program do?
+
+My program will be a "Personal Budget Tracker". It will allow a user to
+read a file of expenses, categorize those expenses, calculate totals,
+and display a financial summary. The program will help users understand
+how much money they are spending and where their money is going.
+
+The program will:
+- Read expenses from a CSV file
+- Categorize expenses (food, rent, transportation, etc.)
+- Calculate total spending
+- Calculate spending per category
+- Display a summary report
+
+
+2. What inputs will your program need?
+
+The program will read input from a CSV file that contains:
+- date
+- description
+- category
+- amount
+
+Example:
+2026-04-01,Groceries,Food,45.20
+
+The program may also allow optional user input such as:
+- selecting a category to analyze
+- choosing to display all data or summaries
+
+
+3. What outputs will your program produce?
+
+The program will display:
+- Total amount spent
+- Total per category
+- Number of transactions
+- Average spending
+- A formatted report in the terminal
+
+Example output:
+Total Spending: $523.40
+Food: $120.50
+Transport: $80.00
+Rent: $300.00
+
+
+4. What Python topics will you use?
+
+This program will use:
+- Functions (multiple reusable functions)
+- Dictionaries (to store categorized data)
+- Lists
+- File handling (CSV reading)
+- Exception handling
+- Loops and conditionals
+- Pytest (for testing functions)
+
+
+5. What functions will your program include?
+
+My program will include functions such as:
+
+- read_expenses(filename)
+  Reads the CSV file and returns a list of expense records
+
+- calculate_total(expenses)
+  Returns the total amount spent
+
+- categorize_expenses(expenses)
+  Returns a dictionary grouped by category
+
+- calculate_category_totals(expenses)
+  Returns totals per category
+
+- calculate_average(expenses)
+  Returns average spending
+
+- display_report(data)
+  Prints the formatted report
+
+
+6. Which functions will you test with pytest?
+
+I will write test functions for:
+- calculate_total()
+- calculate_category_totals()
+
+These functions are easy to test because they:
+- take input parameters
+- return values
+- do not depend on user input or printing
+
+
+7. How is this project different from previous assignments?
+
+This project is different because:
+- It combines multiple concepts into one larger program
+- It processes real-world financial data
+- It includes more complex data handling and analysis
+- It requires multiple functions working together
+- It includes unit testing with pytest
+
+
+8. How many hours do you plan to spend?
+
+I plan to spend at least 12–15 hours on this project:
+- 3 hours planning and design
+- 5–6 hours coding
+- 2–3 hours testing and debugging
+- 2–3 hours improvements and enhancements
